@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarTastic</title>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+    <form action="/cars/<%= car._id %>?_method=PUT" method="post">
+        <label for="name">Car name:</label>
+        <input type="text" name="name" id="name" value="<%= car.name %>">
+        <br>
+        <label for="make">Car make:</label>
+        <input type="text" name="make" id="make" value="<%= car.make %>">
+        <br>
+        <label for="model">Care model:</label>
+        <input type="text" name="model" id="model" value="<%= car.model %>" value>
+        <br>
+        <label for="color">Car color:</label>
+        <input type="text" name="color" id="color" value="<%= car.color%>">
+        <br>
+        <label for="manufacturedate">Manufacture date:</label>
+        <input type="date" name="manufacturedate" id="manufacturedate" value="<%= car.manufacturedate.toString() %>">
+        <br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarTastic</title>
+</head>
+<body>
+    <%- include('../partials/nav') %>
+    <div class="carContainer"></div>
+    <% cars.forEach((car,index)=>{%>
+    <div class="carCard">
+        <h3><%= car.name %></h3>
+        <h3><%= car.make %></h3>
+        <h3><%= car.model %></h3>
+        <h3><%= car.color %></h3>
+        <h3><%= car.manufacturedate %></h3>
+        <a href="/cars/<%= car._id %>">
+            <button>
+            More info
+            </button>
+        </a>
+    </div>
+        <% }) %>
+    </div>
+</body>
+</html>
