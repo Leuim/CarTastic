@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(196, 204, 211);
+    font-family: "Poppins";
+}
+nav {
+    background-color: rgb(216, 225, 233);
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.mainNav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+.mainNav li{
+    list-style: none;
+    font-size: 26px;
+    transition: all 0.3s ease-in;
+}
+.mainNav li:hover{
+    font-weight: 700;
+}
+.indexContainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    height: 80vh;           
+}
+
+.indexContent {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    height: 80vh;           
+}
+.formContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    text-align: center;
+    height: 50vh;
+    width:20vw;
+    background-color: aliceblue;
+    border: 1px solid rgb(185, 184, 184);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.indexTitleImg{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#mainTitle{
+    margin-top: 20px;
+    font-size: 55px;
+    text-shadow: 0 5px 5px  rgba(0, 0, 0, 0.2);
+}
+
+.iconCar{
+    font-size: 100px;
+}
+.iconSmoke{
+    margin-top: 25px;
+    font-size: 60px;
+}
+.carContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.carsCard{
+    width: 10%;
+    padding: 10px;
+    background-color: rgb(218, 235, 250);
+    border: 1px solid rgb(144, 149, 153);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.regButton{
+    background-color: aliceblue;
+    font-size: 26px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+.regButton:hover{
+    background-color: rgb(136, 163, 187);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 18px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.inputText{
+    font-size: 32px;
+    margin:10px 2px;
+    display:flex;
+    flex-direction: column;
+}
+
+footer{
+    font-size: 14px;
+    font-weight: 700;
+    padding:1em;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(216, 225, 233);
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}

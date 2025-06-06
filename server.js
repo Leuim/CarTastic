@@ -3,6 +3,7 @@ dotenv.config()
 const express = require('express')
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
+const path = require('path')
 const PORT = 3000
 const app = express()
 
@@ -14,6 +15,8 @@ mongoose.connection.on('connected',()=>{
 // use
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.get('/',async (req,res)=>{
     res.render('index.ejs')
 })

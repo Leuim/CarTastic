@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarTastic</title>
-</head>
-<body>
-    <h1>CarTastic</h1>
-    <a href="/cars">Browse cars</a>
-</body>
-</html>
+<%- include('partials/header') %>
+    <div class="indexContainer">
+        <div class="indexContent">
+            <div class="indexTitleImg">
+                <h1 id="mainTitle">CarTastic</h1><span class="iconCar">🚗</span> <span class="iconSmoke">💨</span>
+            </div>
+            <p>This website allows you to create, view, update, and delete car model records easily.<br> Designed for simplicity and efficiency, it provides a user-friendly interface to manage car models, <br> including details like model name, manufacturer, year, and more.</p>
+            <a href="/cars"><button class="regButton">Browse cars</button></a>
+        </div> 
+    </div>
+    <%- include('partials/footer') %>
