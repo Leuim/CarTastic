@@ -1,17 +1,29 @@
 <%- include('../partials/header') %>
-    <div class="carContainer">
-        <div class="carsCard">
-            <h3><%= car.name %></h3>
-            <h4><%= car.make %></h4>
-            <h4><%= car.model %></h4>
-            <h4><%= car.color %></h4>
-            <h4><%= car.manufacturedate %></h4>
+    <div class="formContainer">
+        <div class="carsCard" style="text-align: center;">
+            <h2 style="text-align: center;"><%= car.name %> details</h2>
+            <div>
+                <input type="text" name="name" id="name" disabled class="inputText" value="<%= car.name%>">
+            </div>
+            <br>
+            <div>
+                <input type="text" name="make" id="make" disabled class="inputText" value="<%= car.make %>">
+            </div>
+            <br>
+            <div>
+                <input type="text" name="model" id="model" disabled class="inputText" value="<%= car.model %>" >
+            </div>
+            <br>
+            <div>
+            <input type="text" name="color" id="color" disabled class="inputText" value="<%= car.color %>">
+            </div>
+            <br>
             <div class="formActions">
                 <a href="/cars/<%= car._id %>/edit">
-                    <button>Edit</button>
+                    <button class="editButton">Edit</button>
                 </a>
                 <form action="/cars/<%= car._id %>?_method=DELETE" method="POST">
-                    <button type="submit">Delete <%= car.name %></button>
+                    <button type="submit" class="deleteButton">Delete</button>
                 </form>
             </div>
         </div>

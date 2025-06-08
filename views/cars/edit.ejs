@@ -1,17 +1,23 @@
 <%- include('../partials/header') %>
+<div class="formContainer">
+    <div class="formContent">
+        <h2><%= car.name %> details</h2>
     <form action="/cars/<%= car._id %>?_method=PUT" method="post">
-        <label for="name">Car name:</label>
-        <input type="text" name="name" id="name" value="<%= car.name %>">
+        
+        <input type="text" name="name" id="name" class="inputText" value="<%= car.name %>">
         <br>
-        <label for="make">Car make:</label>
-        <input type="text" name="make" id="make" value="<%= car.make %>">
         <br>
-        <label for="model">Care model:</label>
-        <input type="text" name="model" id="model" value="<%= car.model %>" value>
+        <input type="text" name="make" id="make" class="inputText" value="<%= car.make %>">
         <br>
-        <label for="color">Car color:</label>
-        <input type="text" name="color" id="color" value="<%= car.color%>">
         <br>
-        <button type="submit">Save</button>
+        <input type="text" name="model" id="model" class="inputText" value="<%= car.model %>" value>
+        <br>
+        <br>
+        <input type="text" name="color" id="color" class="inputText" value="<%= car.color%>">
+        <br>
+        <br>
+        <button type="submit" class="addButton">Save</button>
     </form>
+</div>
+</div>
 <%- include('../partials/footer') %>

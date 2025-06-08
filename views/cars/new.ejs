@@ -1,28 +1,25 @@
 <%- include('../partials/header') %>
 <div class="formContainer">
     <div class="formContent">
+        <h2>Car details</h2>
     <form action="/cars" method="post">
         <div>
-            <label for="name">Car name:</label>
-            <input type="text" name="name" id="name" required class="inputText">
+            <input type="text" name="name" id="name" required class="inputText" placeholder="Name">
         </div>
         <br>
         <div>
-            <label for="make">Car make:</label>
-            <input type="text" name="make" id="make" required class="inputText">
+            <input type="text" name="make" id="make" required class="inputText" placeholder="Make">
         </div>
         <br>
         <div>
-            <label for="model">Car model:</label>
-            <input type="text" name="model" id="model" required class="inputText">
+            <input type="text" name="model" id="model" required class="inputText" placeholder="Model">
         </div>
         <br>
         <div>
-        <label for="color">Car color:</label>
-        <input type="text" name="color" id="color" required class="inputText">
+        <input type="text" name="color" id="color" required class="inputText" placeholder="Color">
         </div>
         <br>
-        <button type="submit">Add car</button>
+        <button type="submit" class="addButton">Add car</button>
     </form>
     </div>
 </div>
